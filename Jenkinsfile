@@ -1,5 +1,6 @@
-node('master') {
-	stage ('checkout code'){
+pipeline {
+    agent any
+stage ('checkout code'){
 		checkout scm
 	}
 	
@@ -30,4 +31,4 @@ node('master') {
 		      to: "vem_rajesh@yahoo.com"
 		    )
 	}
-}
+}}
